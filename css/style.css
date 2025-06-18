@@ -5,6 +5,7 @@ body {
 #header {
 	text-align: center;
 	color: #004b4d;
+	font-size: 1.5rem;
 	padding: 15px;
 	background: linear-gradient(to top, #00c9cc 0%, #ffffff 100%);
 }	
@@ -34,12 +35,12 @@ body {
   float: left;
   position: relative;
   right: 50%;
-  display: block;
+	display: block;
 }
 
 #main_nav ul li a {
   display: block;
-	padding: 10px 20px;
+	padding: 10px 120px;
   color: #fff;
   text-decoration: none;
 }
@@ -50,16 +51,47 @@ body {
 
 img {
 	border-radius: 10px;
+	border: 2px solid #004b4d;
 }
 
 #content_wrapper {
-	margin: 10px;
-	padding: 10px;
+	margin-top: none;
+	margin: 30px;
+	padding: 50px;
 }
 
-#personal_info {
-	float: right;
+#personal_info, #education, #competencies, #it_skills, #languages, #work_experience {
 	border: 2px solid #004b4d;
 	padding: 20px;
+	margin: 5px;
 	border-radius: 10px;
+	clear: both;
 }
+
+#personal_info, #education {
+	float: right;
+}	
+
+.link {
+	display: inline-block;
+  background-color: #0077b5;
+  color: white;
+  padding: 10px 60px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+	float: center;
+}
+
+.link:hover {
+  background-color: #005f8d;
+}
+
+.cv {
+	max-width: 500px;
+	height: auto;
+	float: left;
+	margin-right: 20px;
+}
+
