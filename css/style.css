@@ -1,10 +1,18 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 #header {
 	text-align: center;
+	color: #004b4d;
+	padding: 15px;
+	background: linear-gradient(to top, #00c9cc 0%, #ffffff 100%);
 }	
 
 #main_nav {
-  background-color: blue;
+  background-color: #00c9cc;
   overflow: hidden;
+	font-size: 2rem;
 }
 
 #nav-container {
@@ -37,5 +45,21 @@
 }
 
 #main_nav ul li a:hover {
-  background-color: #000;
+  background-color: #007d80;
+}
+
+img {
+	border-radius: 10px;
+}
+
+#content_wrapper {
+	margin: 10px;
+	padding: 10px;
+}
+
+#personal_info {
+	float: right;
+	border: 2px solid #004b4d;
+	padding: 20px;
+	border-radius: 10px;
 }
