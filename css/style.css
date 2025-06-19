@@ -1,5 +1,6 @@
 body {
   font-family: "Quicksand", sans-serif;
+	background: linear-gradient(to top, #15adaf 0%, #ebe3f1 100%);
 }
 
 #header {
@@ -7,11 +8,11 @@ body {
 	color: #004b4d;
 	font-size: 1.5rem;
 	padding: 15px;
-	background: linear-gradient(to top, #00c9cc 0%, #ffffff 100%);
+	background: linear-gradient(to top, #15adaf 0%, #ebe3f1 100%);
 }	
 
 #main_nav {
-  background-color: #00c9cc;
+  background-color: #15adaf;
   overflow: hidden;
 	font-size: 2rem;
 }
@@ -43,6 +44,7 @@ body {
 	padding: 10px 120px;
   color: #fff;
   text-decoration: none;
+	border-radius: 10px;
 }
 
 #main_nav ul li a:hover {
@@ -100,5 +102,26 @@ img {
 
 .link:hover {
   background-color: #005f8d;
+}
+
+.section_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section_row section {
+  flex: 1 1 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section_row {
+    flex-direction: column;
+  }
 }
 
