@@ -60,17 +60,31 @@ img {
 	padding: 50px;
 }
 
+#profile {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.cv {
+	max-width: 600px;
+	height: auto;
+	flex-shrink: 0;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+}
+
 #personal_info, #education, #competencies, #it_skills, #languages, #work_experience {
 	border: 2px solid #004b4d;
 	padding: 20px;
 	margin: 5px;
 	border-radius: 10px;
-	clear: both;
 }
-
-#personal_info, #education {
-	float: right;
-}	
 
 .link {
 	display: inline-block;
@@ -86,12 +100,5 @@ img {
 
 .link:hover {
   background-color: #005f8d;
-}
-
-.cv {
-	max-width: 500px;
-	height: auto;
-	float: left;
-	margin-right: 20px;
 }
 
